@@ -17,9 +17,10 @@ body {
 	margin: 0;
 }
 header {
-	background-image: url(../images/obama.jpg);
+	background-image: url(../images/barack.jpg);
 	background-size: cover;
-	width: 100vw;
+	height: 600px;
+	background-position: center center;
 }
 header.grid-header {
 	display: flex;
@@ -41,7 +42,7 @@ h1 {
 
 h2 {
 	font-size: 60px;
-	margin-top: 400px;
+	margin-top: 500px;
 	margin-right: 40px;
 	text-align: right;
 	
