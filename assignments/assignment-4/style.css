@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.flex-me {
+  display: flex;
+  justify-content:center;
+}
+
+.flex-me div {
+  justify-content:center;
+}
+
+h2 {
+  float: left;
+	font-size: 100px;
+	margin: 0;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	padding-top: 50px;
+}
+
+.two {
+  float: left;
+  margin-top: 50px; 
+  margin-right: 50px;
+}
+
+.three{
+  background-color: rgb(192, 121, 66);
+  float: left;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 495px;
+  height: 500px;
+}
+
+.four {
+  background-color: rgb(241, 204, 181);
+  float: left;
+  margin-top: 50px;
+  width: 495px;
+  height: 500px;
+}
+
+.grad1 {
+  margin-top: 50px;
+  height: 400px;
+  background-color: rgb(192, 121, 66); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgb(192, 121, 66), rgb(241, 204, 181));
+}
+
+.five {
+  background-color: rgb(187, 109, 58);
+  float: left;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 310px;
+  height: 500px;
+}
+
+.six {
+  background-color: rgb(145, 75, 35);
+  float: left;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 310px;
+  height: 500px;
+}
+
+.seven {
+  background-color: rgb(5, 5, 5);
+  float: left;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 310px;
+  height: 500px;
+}
+
+.eight {
+  float: left;
+  margin-top: 50px;
+}
+
+h3 {
+  float: left;
+	font-size: 100px;
+	margin: 0;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	padding-top: 50px;
+}
+
+.grad2 {
+  margin-top: 50px;
+  height: 400px;
+  background-color:  rgb(187, 109, 58); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,  rgb(187, 109, 58), rgb(145, 75, 35), rgb(5, 5, 5));
+}
+
+.ten {
+  float: left;
+  margin-top: 50px; 
+  margin-right: 50px;
+}
+
+.eleven {
+  background-color: rgb(217, 162, 126);
+  float: left;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 495px;
+  height: 500px;
+}
+
+.twelve {
+  background-color: rgb(245, 232, 230);
+  float: left;
+  margin-top: 50px;
+  width: 495px;
+  height: 500px;
+}
+
+.grad3 {
+  margin-top: 50px;
+  height: 400px;
+  background-color:  rgb(217, 162, 130); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,  rgb(217, 162, 126), rgb(245, 232, 230));
+}
+
+.grid::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}

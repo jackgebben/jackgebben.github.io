@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #FAEBD7;
+	background: #FAEBD7 url('../images/dot-grid.png');
 	color: #333;
 }
 
@@ -22,8 +22,8 @@ header, nav, main, footer {
 
 /* Header styles */
 header { 
-	background-color: #000;
-	color: BlanchedAlmond;
+	background-color:rgb(3, 35, 38);;
+	color: rgb(218, 177, 98);
 	min-height: 100px;
 	margin-top: 60px;
 
@@ -36,14 +36,27 @@ header h1 {
 
 
 /* Nav styles */
-nav { background-color: #333; }
+nav { background-color: rgb(255, 255, 255); }
 nav ul { 
 	display: flex;
 	justify-content: flex-end;
 }
 nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
+nav a { color: rgb(0, 0, 0); }
+nav a:hover { color: rgb(0, 4, 225); }
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
 
 
 /* Main styles */
