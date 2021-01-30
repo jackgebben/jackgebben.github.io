@@ -1,0 +1,85 @@
+
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 70px;
+  }
+  
+  input {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 100px;
+  }
+  
+  h2, h3 {
+    margin: 0 0 .75em 0;
+  }  
+
+  .container {
+    max-width: 750px;
+    margin: 20px auto 0 auto;
+    padding: 30px;
+    background-color: #fff;
+  }
+
+  .form-row {
+    padding: 10px 0;
+    display: flex;
+  }
+
+  .form-row label {
+    padding-right: 10px;
+  }
+
+  .form-row input {
+    flex: 1;
+  }
+
+  .column-layout {
+    max-width: 1300px;
+    background-color: #FFF;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-column {
+   flex-basis: 70%;
+    box-sizing: border-box;
+    order: 1;
+  }
+
+   .sidebar-one {
+    flex-basis: 20%;
+    box-sizing: border-box;
+    order: 2;
+  }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.gallery img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery div {
+  padding: 50px 0 0 0;
+  box-sizing: border-box;
+}
