@@ -163,8 +163,18 @@ section:nth-child(4) {
 }
 
 .back {
-  top: 200px;
-  left: 200px;
+  top: 457px;
+  left: 568px;
+}
+
+.ear {
+    top: 350px;
+    left: 591px;
+}
+
+.eyes {
+    top: 333;
+    left: 946;
 }
 
 .beagle {
