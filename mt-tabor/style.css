@@ -208,10 +208,14 @@ img {
     .intro div, .support div, .expierence article {
         flex: 1;
     }
-    .intro .intro-content, .support .support-content, .expierence-card {
+    .intro .intro-content, .expierence-card {
         width: 90%;
         margin: auto;
     }
+    .support-content {
+        padding: 115px 150px 0px 240px;
+    }
+    
     article {
         margin-right: 60px;
     }
