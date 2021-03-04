@@ -8,9 +8,22 @@ body {
     margin: auto;
 }
 
+h1 {
+    font-size: 32px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
 h2 {
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+h3 {
+    font-size: 22px;
+  line-height: 33px;
   margin-bottom: 0;
   font-weight: bold;
 }
@@ -19,11 +32,43 @@ header {
     width: 90%;
     margin: auto;
 }
+
 .logo {
     width: 100px;
 }
 
 img {
+    width: 100%;
+}
+
+.intro-image{
+    object-fit: fill;
+}
+
+.slider {
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.slide-content {
+    position: relative;
+}
+  
+.slide-content .cta {
+    position: absolute;
+    top: 260px;
+    left: 88px;
+    width: 344px;
+    height: 194px;
+}
+.slide-content .cta.donate {
+    background-color: #11B7A9;
+}
+.slide-content .cta.volunteer {
+    background-color: pink;
+}
+  
+.slide-content img {
     width: 100%;
 }
 
@@ -71,12 +116,24 @@ img {
 }
 
 .button1 {
-    background-color: #F25C05; 
+    background-color: #11B7A9; 
     color: black; 
     border: 1px solid black;
 }
   
 .button1:hover {
+    background-color: white;
+    color: #11B7A9;
+    border: none;
+}
+
+.button2 {
+    background-color: #F25C05; 
+    color: black; 
+    border: 1px solid black;
+}
+  
+.button2:hover {
     background-color: white;
     color: #F25C05;
     border: none;
@@ -188,11 +245,40 @@ img {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    h2 {
+    h1 {
         font-size: 48px;
         line-height: 60px;
         font-weight: bold;
         margin: 0;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: bold;
+        margin: 0;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .slider {
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .slide-content {
+        position: relative;
+    }
+      
+    .slide-content .cta {
+        position: absolute;
+        top: 480px;
+        left: 753px;
+        width: 414px;
+        height: 234px;
     }
 
     .intro, .expierence {
