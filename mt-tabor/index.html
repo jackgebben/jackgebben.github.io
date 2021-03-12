@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Friends of Mt. Tabor</title>
 </head>
 <body>
     <header class="nav">
         <div class="logo">
-            <img src="images/logo-13.png" alt="friends of mt tabor emblem logo">
+            <img src="images/logo-12.png" alt="friends of mt tabor emblem logo">
         </div>
         <div class="icon">
             <div class="hamburger"></div>
@@ -24,6 +28,9 @@
         </div>          
     </header>
     <header class="desktop">
+        <div class="logo">
+            <img src="images/logo-12.png" alt="friends of mt tabor emblem logo">
+        </div>
         <div class="menu-desktop">
             <a href="#about">About</a>
             <a href="#volunteer">Volunteer</a>
@@ -35,22 +42,27 @@
 
     
     <main>
-
         <div class="slider single-slide">
             <div class="slide-content">
-                <img src="images/view.jpeg" alt="view of resevoir and neighborhood"> 
+                <img src="images/fall.jpg" alt="view of resevoir in autumn"> 
                 <div class="cta donate">
-                    <h1>Help Give</h1>
-                    <p>Your support makes a difference</p>
-                    <a class="button button1" href="#">Donate</a>
+                    <div class="grid-x align-center">
+                        <div class="overlay-box">
+                            <h1>Help Give</h1>
+                            <p>Your support makes a difference</p>
+                            <div class="center"><a class="button button1" href="#">Donate</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <section class="intro">
             <div class="intro-content">
-                <h2>The Friends of Mt. Tabor Park are volunteer stewards of Mt. Tabor Park, a picturesque, 197-acre volcanic oasis located in the heart of Southeast Portland, Oregon.</h2>
-                <p>Come explore the park's history and see how you can help support our efforts to keep Mt. Tabor safe, clean, and beautiful.</p>
+                <div class="intro-text">
+                    <h2>The Friends of Mt. Tabor Park are volunteer stewards of Mt. Tabor Park, a picturesque, 197-acre volcanic oasis located in the heart of Southeast Portland, Oregon.</h2>
+                    <p>Come explore the park's history and see how you can help support our efforts to keep Mt. Tabor safe, clean, and beautiful.</p>
+                </div> 
             </div>
             <div class="intro-image">
                 <img src="images/volunteering.jpg" alt="group of volunteers smiling">
@@ -61,41 +73,68 @@
             <div class="support-content">
                 <h2>Support the Park</h2>
                 <p>The Friends of Mt. Tabor Park relies on the generous support of our volunteers and membership dues to keep the park safe, clean, and accessible to all. Check out our many volunteer opportunites, and please consider becoming a member. Even the smallest contribution of funds or time makes a huge difference!</p>
-                <a class="button button2" href="#">Volunteer</a>
+                <div class="center"><a class="button button2" href="#">Volunteer</a></div>
             </div>
             <div class="support-image">
                 <img src="images/kid-volunteer.jpg" alt="kid volunteering help plant plants with parent">
             </div>
         </section>
 
-        <section>
-            <h2>Things to do</h2>
-        </section>
-
-        <section class="expierence">
-            <article>
-                <img src="images/trails.png" alt="Family walking on a trail">
-                <div class="expierence-card">
-                    <h3>Walking & Hiking</h3>
-                    <p>Learn More</p>
-                </div>
-            </article>
-            <article>
-                <img src="images/birdy.png" alt="bird">
-                <div class="expierence-card">
-                    <h3>Bird Watching</h3>
-                    <p>Learn More</p>
-                </div>
-            </article>
-            <article>
-                <img src="images/tree.png" alt="Ground up view of the trees">
-                <div class="expierence-card">
-                    <h3>Tree Identification</h3>
-                    <p>Learn More</p>
-                </div>
-            </article>
+        <section class="things-to-do">
+            <div class="things-text">
+                <h2>Things to do</h2>
+            </div>
+            <div class="expierence">
+                <article>
+                    <img src="images/trails.png" alt="Family walking on a trail">
+                    <div class="expierence-card">
+                        <h3>Walking & Hiking</h3>
+                        <p>Learn More</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/birdy.png" alt="bird">
+                    <div class="expierence-card">
+                        <h3>Bird Watching</h3>
+                        <p>Learn More</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/tree.png" alt="Ground up view of the trees">
+                    <div class="expierence-card">
+                        <h3>Tree Identification</h3>
+                        <p>Learn More</p>
+                    </div>
+                </article>
+            </div>  
         </section>
     </main>
+    <footer>
+        <section class="right">
+            <ul>
+                <a>
+                    <li>About</li>
+                </a>
+                <a>
+                    <li>Volunteer</li>
+                </a>
+                <a>
+                    <li>Visit</li>
+                </a>
+                <a>
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <hr>
+        </section>
+        <section class="left">
+            <p class="footertype">4110 SE Hawthorne Blvd., #312
+            <br>Portland, OR 97214-5246</p>
+            <p class="footertype">(503) 512-0816</p>
+            <p class="footertype">taborfriends@gmail.com</p>
+        </section>
+	</footer>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

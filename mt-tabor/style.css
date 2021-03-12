@@ -2,19 +2,23 @@
 	box-sizing: border-box;
 }
 
+
 body {
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     background: #d4d0ca;
     margin: auto;
 }
 
 h1 {
     font-size: 32px;
+    font-family: 'Arbutus Slab', serif;
     margin-bottom: 0;
     font-weight: bold;
 }
 
 h2 {
+  font-family: 'Arbutus Slab', serif;
   font-size: 26px;
   line-height: 36px;
   margin-bottom: 0;
@@ -22,7 +26,8 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
+  font-family: 'Arbutus Slab', serif;
+  font-size: 22px;
   line-height: 33px;
   margin-bottom: 0;
   font-weight: bold;
@@ -33,46 +38,52 @@ header {
     margin: auto;
 }
 
-.logo {
-    width: 100px;
-}
-
 img {
     width: 100%;
-}
-
-.intro-image{
-    object-fit: fill;
+    margin: 0;
 }
 
 .slider {
     margin: 0 auto;
-    padding-top: 100px;
+    margin-top: -50px;
+    padding-bottom: 30px;
 }
 
 .slide-content {
     position: relative;
+    text-align: center;
 }
-  
-.slide-content .cta {
-    position: absolute;
-    top: 260px;
-    left: 88px;
-    width: 344px;
-    height: 194px;
-}
-.slide-content .cta.donate {
-    background-color: #11B7A9;
-}
-.slide-content .cta.volunteer {
-    background-color: pink;
-}
-  
+
 .slide-content img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: bottom;
+}
+  
+.cta.donate{
+    position: absolute;
+    top: 30%;
     width: 100%;
 }
 
-.intro, article {
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.align-center {
+    justify-content: center;
+}
+
+.overlay-box {
+    background-color: #B9BF0A;
+    padding: 10px 20px 10px 20px;
+    opacity: 0.7;
+
+}
+
+article {
     background-color: white;
 }
 .expierence {
@@ -87,9 +98,19 @@ img {
     padding: 30px 0;
 }
 
-.intro .intro-content, .support .support-content, .expierence-card {
+.intro {
+    background-color: #fff;
+}
+
+.intro-content {
     width: 90%;
     margin: auto;
+}
+
+.support .support-content, .expierence-card {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .intro, .support, .expierence {
@@ -99,7 +120,6 @@ img {
 .intro div, .support div, .expierence article {
     flex: 1;
 }
-
 
 .button {
     background-color: black;
@@ -115,15 +135,24 @@ img {
     cursor: pointer;
 }
 
+.center {
+    text-align: center
+}
+
+.things-text {
+    text-align: center;
+    padding-top: 30px;
+}
+
 .button1 {
-    background-color: #11B7A9; 
+    background-color: #B9BF0A; 
     color: black; 
     border: 1px solid black;
 }
   
 .button1:hover {
     background-color: white;
-    color: #11B7A9;
+    color: #B9BF0A;
     border: none;
 }
 
@@ -139,10 +168,51 @@ img {
     border: none;
 }
 
+footer {
+    background-color: #5A4E3C;
+    color: #D4D0CA;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul,
+li {
+  list-style: none;
+}
+  
+.right {
+    font-size: 20px;
+}
+  
+.right li {
+    margin-bottom: 8px;
+}
+  
+footer hr {
+    width: 100%;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+  
+.footertype {
+    margin-bottom: 16px;
+}
+
 /* START of Mobile Menu */
+.logo {
+    width: 40%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
 .nav, .desktop {
     display: block;
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -216,9 +286,10 @@ img {
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding-top: 150px;
+    padding-top: 160px;
     font-family: 'Helvetica', sans-serif;
     text-align: center;
+    margin-top: -300px;
 }
 
 .menu-mobile, .menu-mobile a {
@@ -238,8 +309,8 @@ img {
 }
 
 .desktop, .menu-desktop, .menu-mobile {
-        display: none;
-    }
+    display: none;
+}
 /* END OF Mobile Menu */
 
 
@@ -248,43 +319,48 @@ img {
     h1 {
         font-size: 48px;
         line-height: 60px;
-        font-weight: bold;
         margin: 0;
     }
     h2 {
         font-size: 36px;
         line-height: 46px;
-        font-weight: bold;
         margin: 0;
     }
     h3 {
         font-size: 28px;
         line-height: 38px;
-        font-weight: bold;
         margin: 0;
     }
 
     .slider {
-        margin: 0 auto;
-        padding-top: 20px;
         padding-bottom: 20px;
     }
-    .slide-content {
-        position: relative;
+
+    .slide-content img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: bottom;
     }
       
     .slide-content .cta {
         position: absolute;
-        top: 480px;
-        left: 753px;
-        width: 414px;
-        height: 234px;
+        top: 50%;
+        width: 100%;
     }
 
-    .intro, .expierence {
+    .expierence {
         flex-direction: row;
         margin: 0 auto;
         width: 80%;
+    }
+
+    .intro {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 80%;
+        padding: 100px 0px;
+        background-color: #D4D0CA;
     }
 
     .support {
@@ -294,9 +370,22 @@ img {
     .intro div, .support div, .expierence article {
         flex: 1;
     }
-    .intro .intro-content, .expierence-card {
+    .expierence-card {
         width: 90%;
         margin: auto;
+    }
+
+    .intro-image .support-image {
+        width: 100%;
+    }
+
+    .intro-content {
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .intro-text {
+        padding: 50px;
     }
     .support-content {
         padding: 115px 150px 0px 240px;
@@ -309,7 +398,38 @@ img {
         margin-right: 0px;
     }
 
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5rem;
+    }
+    
+    .right {
+        text-align: left;
+    }
+    
+    .right a:hover {
+        color: #11B7A9;
+        transition: .2s ease-in-out all;
+    }
+    
+    .left {
+        text-align: right;
+        width: 20vw;
+    }
+    
+    footer hr {
+        display: none;
+    }
+
+
     /* START of desktop menu for 768 media query */
+    .logo {
+        width: 20%;
+        padding-top: 20px;
+        padding-left: 130px;
+    }
+    
     .menu-desktop {
         width: 100%;
         display: block;
