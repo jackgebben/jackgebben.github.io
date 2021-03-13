@@ -45,7 +45,7 @@ img {
 
 .slider {
     margin: 0 auto;
-    margin-top: -50px;
+    margin-top: -100px;
     padding-bottom: 30px;
 }
 
@@ -86,7 +86,7 @@ img {
 article {
     background-color: white;
 }
-.expierence {
+.expierence, .ourboard {
     padding: 40px 40px 70px 40px;
 }
 
@@ -107,17 +107,17 @@ article {
     margin: auto;
 }
 
-.support .support-content, .expierence-card {
+.support .support-content, .expierence-card, .ourboard-card {
     width: 90%;
     margin: auto;
     padding-bottom: 50px;
 }
 
-.intro, .support, .expierence {
+.intro, .support, .expierence, .ourboard {
     display: flex;
     flex-direction: column;
 }
-.intro div, .support div, .expierence article {
+.intro div, .support div, .expierence article, .ourboard article {
     flex: 1;
 }
 
@@ -205,7 +205,7 @@ footer hr {
 
 /* START of Mobile Menu */
 .logo {
-    width: 40%;
+    width: 160px;
     padding-top: 50px;
     padding-left: 50px;
 }
@@ -315,7 +315,7 @@ footer hr {
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     h1 {
         font-size: 48px;
         line-height: 60px;
@@ -334,11 +334,12 @@ footer hr {
 
     .slider {
         padding-bottom: 20px;
+        margin-top: -150px;
     }
 
     .slide-content img {
         width: 100%;
-        height: 600px;
+        height: 800px;
         object-fit: cover;
         object-position: bottom;
     }
@@ -349,7 +350,7 @@ footer hr {
         width: 100%;
     }
 
-    .expierence {
+    .expierence, .ourboard {
         flex-direction: row;
         margin: 0 auto;
         width: 80%;
@@ -367,10 +368,10 @@ footer hr {
         flex-direction: row;
         margin: 0 auto;
     }
-    .intro div, .support div, .expierence article {
+    .intro div, .support div, .expierence article, .ourboard article {
         flex: 1;
     }
-    .expierence-card {
+    .expierence-card, .ourboard-card {
         width: 90%;
         margin: auto;
     }
@@ -425,7 +426,7 @@ footer hr {
 
     /* START of desktop menu for 768 media query */
     .logo {
-        width: 20%;
+        width: 300px;
         padding-top: 20px;
         padding-left: 130px;
     }
