@@ -12,11 +12,14 @@ body {
   font-weight: 100;
 }
 
-header {
+header, .nav-tabs {
   font-family: pridi;
   font-weight: 100;
   width: 100vw;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,35 +27,54 @@ header {
   height: 100px;
 }
 
+.nav-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+}
 
+.nav-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+}
+
+.nav-tab:hover {
+  color:white;
+  background: rgba(102,177,241,0.8);
+  transition: all 0.5s ease;
+}
 
 main {
   display: flex;
   width: 500vw;
   height: 100vh;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 section {
   width: 100vw;
   height: 100vh;
-  margin-top: 100px;
 }
 
-section:nth-child(1) {
-  background-color: lightsteelblue;
-}
-section:nth-child(2) {
-  background-color: lightgreen;
-}
 section:nth-child(3) {
-  background-color: lightsalmon;
+  background-image: url('images/dot-grid.png');
 }
-section:nth-child(4) {
-  background-color: lightskyblue;
-}
-section:nth-child(4) {
-  background-color: lightgoldenrodyellow;
+
+section:nth-child(5) {
+  background-image: url('images/cork-board.png');
 }
 
 .gallery {
@@ -91,7 +113,7 @@ section:nth-child(4) {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-end: 6;
 }
 
 .item-e {
@@ -181,74 +203,74 @@ section:nth-child(4) {
 
 .back {
   position: absolute;
-  width: 199.86px;
-  height: 98.2px;
-  left: 568.34px;
-  top: 457.8px;
+  width: 200px;
+  height: 100px;
+  left: 550px;
+  top: 200px;
 }
 
 .ear {
   position: absolute;
-  width: 275.46px;
-  height: 112.2px;
-  left: 591.54px;
-  top: 350.8px;
+  width: 275px;
+  height: 112px;
+  left: 591px;
+  top: 50px;
 }
 
 .eyes {
   position: absolute;
-  width: 277.34px;
-  height: 112.3px;
+  width: 277px;
+  height: 112px;
   left: 946px;
-  top: 333.7px;
+  top: 60px;
 }
 
 .nose {
   position: absolute;
-  width: 263.95px;
-  height: 46.48px;
+  width: 263px;
+  height: 46px;
   left: 1007px;
-  top: 443.32px;
+  top: 160px;
 }
 
 .tongue {
   position: absolute;
-  width: 288.68px;
-  height: 69.2px;
+  width: 288px;
+  height: 69px;
   left: 966px;
-  top: 508px;
+  top: 240px;
 }
 
 .heart {
   position: absolute;
-  width: 406.46px;
-  height: 28.3px;
-  left: 843px;
-  top: 598px;
+  width: 406px;
+  height: 28px;
+  left: 800px;
+  top: 350px;
 } 
 
 .paws {
   position: absolute;
-  width: 216.38px;
-  height: 105.8px;
-  left: 958.34px;
-  top: 729px;
+  width: 216px;
+  height: 105px;
+  left: 958px;
+  top: 500px;
 }
 
 .spot {
   position: absolute;
-  width: 121.73px;
-  height: 79.8px;
-  left: 700.54px;
-  top: 689px;
+  width: 121px;
+  height: 79px;
+  left: 620px;
+  top: 440px;
 }
 
 .butt {
   position: absolute;
-  width: 227.72px;
-  height: 42.39px;
-  left: 302.28px;
-  top: 590.8px;
+  width: 227px;
+  height: 42px;
+  left: 240px;
+  top: 320px;
 }
 
 

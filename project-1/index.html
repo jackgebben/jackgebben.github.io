@@ -8,10 +8,19 @@
   </head>
   <body>
     <header>
-      <h1>Dogs</h1>
+      <section class="nav-tabs">
+        <div class="nav-tabs-container">
+          <a class="nav-tab" href="#tab-doghouse">Dog House</a>
+          <a class="nav-tab" href="#tab-history">History</a>
+          <a class="nav-tab" href="#tab-anatomy">Anatomy</a>
+          <a class="nav-tab" href="#tab-breeds">Breeds</a>
+          <a class="nav-tab" href="#tab-benefits">Benefits</a>
+          <span class="nav-tab-slider"></span>
+        </div>
+      </section>
     </header>
     <main>
-      <section class="home">
+      <section class="home" id="tab-doghouse">
         <div class="gallery">
           <div class="item-a">
             <img src="images/groups.jpg" class="gallery-img" alt="group of dogs" />
@@ -23,7 +32,7 @@
             <img src="images/smiling.jpg" class="gallery-img" alt="happy dog" />
           </div>
           <div class="item-d">
-            <p>"dog spelled backwards is god"</p>
+            <img src="images/vitruvian-dog.jpg" class="gallery-img" alt="dog" />
           </div>
           <div class="item-e">
             <img src="images/god.jpg" class="gallery-img" alt="angelic dog as god" />
@@ -35,12 +44,12 @@
             <img src="images/glasses.jpg" class="gallery-img" alt="dog in shades" />
           </div>
           <div class="item-h">
-            <p>human's bestfriend!</p>
+            <img src="images/row.jpg" class="gallery-img" alt="dogs in a row" />
           </div>
         </div>
       </section>
 
-      <section class="history">
+      <section class="history" id="tab-history">
         <article class="text">
           <div class="description">
             <h2>History</h2>
@@ -52,7 +61,7 @@
         </article>
       </section>
 
-      <section class="anatomy">
+      <section class="anatomy" id="tab-anatomy">
         <img src="images/tail.png" class="tail" alt="tail: happiness level" />
         
         <img src="images/back.png" class="back" alt="back: gross smell and dirt collection area" />
@@ -76,7 +85,7 @@
         <img src="images/Beagle-an.png" class="beagle" />
       </section>
 
-      <section class="breeds">
+      <section class="breeds" id="tab-breeds">
         <div class="row">
           <div class="column">
             <div><img src="images/Shih-Tzu-br.png" alt="Shih-Tzu" /></div>
@@ -105,7 +114,7 @@
           </div>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" id="tab-benefits">
         <p>Dogs</p>
       </section>
     </main>
